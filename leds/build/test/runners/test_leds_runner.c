@@ -19,6 +19,12 @@ extern void test_todos_los_leds_inician_apagados(void);
 extern void test_prender_led_individual(void);
 extern void test_apagar_led_individual(void);
 extern void test_prender_y_apagar_algunos_leds(void);
+extern void test_prender_todos_los_leds(void);
+extern void test_apagar_todos_los_leds(void);
+extern void test_consultar_led_encendido(void);
+extern void test_consultar_led_apagado(void);
+extern void test_revisar_limites_parametros(void);
+extern void test_parametros_fuera_de_limites(void);
 
 
 /*=======Mock Management=====*/
@@ -101,16 +107,34 @@ static void run_test(UnityTestFunction func, const char* name, UNITY_LINE_TYPE l
       UNITY_PRINT_EOL();
       UnityPrint("  test_prender_y_apagar_algunos_leds");
       UNITY_PRINT_EOL();
+      UnityPrint("  test_prender_todos_los_leds");
+      UNITY_PRINT_EOL();
+      UnityPrint("  test_apagar_todos_los_leds");
+      UNITY_PRINT_EOL();
+      UnityPrint("  test_consultar_led_encendido");
+      UNITY_PRINT_EOL();
+      UnityPrint("  test_consultar_led_apagado");
+      UNITY_PRINT_EOL();
+      UnityPrint("  test_revisar_limites_parametros");
+      UNITY_PRINT_EOL();
+      UnityPrint("  test_parametros_fuera_de_limites");
+      UNITY_PRINT_EOL();
       return 0;
     }
     return parse_status;
   }
 #endif
   UnityBegin("test_leds.c");
-  run_test(test_todos_los_leds_inician_apagados, "test_todos_los_leds_inician_apagados", 20);
-  run_test(test_prender_led_individual, "test_prender_led_individual", 26);
-  run_test(test_apagar_led_individual, "test_apagar_led_individual", 31);
-  run_test(test_prender_y_apagar_algunos_leds, "test_prender_y_apagar_algunos_leds", 37);
+  run_test(test_todos_los_leds_inician_apagados, "test_todos_los_leds_inician_apagados", 12);
+  run_test(test_prender_led_individual, "test_prender_led_individual", 19);
+  run_test(test_apagar_led_individual, "test_apagar_led_individual", 25);
+  run_test(test_prender_y_apagar_algunos_leds, "test_prender_y_apagar_algunos_leds", 32);
+  run_test(test_prender_todos_los_leds, "test_prender_todos_los_leds", 41);
+  run_test(test_apagar_todos_los_leds, "test_apagar_todos_los_leds", 47);
+  run_test(test_consultar_led_encendido, "test_consultar_led_encendido", 54);
+  run_test(test_consultar_led_apagado, "test_consultar_led_apagado", 60);
+  run_test(test_revisar_limites_parametros, "test_revisar_limites_parametros", 65);
+  run_test(test_parametros_fuera_de_limites, "test_parametros_fuera_de_limites", 73);
 
   return UNITY_END();
 }
