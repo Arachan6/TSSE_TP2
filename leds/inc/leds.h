@@ -8,7 +8,7 @@
  * @brief Inicializa el módulo de LEDs, apagando todos los LEDs.
  * @param direccion Puntero a la variable donde se almacenará el estado de los LEDs.
  */
-void LedsInit(uint16_t* direccion);
+void LedsInit(uint16_t * direccion);
 
 /**
  * @brief Enciende un LED específico.
