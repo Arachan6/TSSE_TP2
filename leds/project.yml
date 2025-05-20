@@ -81,9 +81,9 @@
 #Specify which reports you'd like from the log factory
 :report_tests_log_factory:
   :reports:
-    - json 
-    - junit 
-    - cppunit 
+    - json
+    - junit
+    - cppunit
     - html
 
 #override the default extensions for your system and toolchain
@@ -133,8 +133,8 @@
     - TEST # Simple list option to add symbol 'TEST' to compilation of all files in all test executables
   :release: []
 
-  # Enable to inject name of a test as a unique compilation symbol into its respective executable build. 
-  :use_test_definition: FALSE 
+  # Enable to inject name of a test as a unique compilation symbol into its respective executable build.
+  :use_test_definition: FALSE
 
 # Configure additional command line flags provided to tools used in each build step
 # :flags:
@@ -198,7 +198,7 @@
   :callback_include_count: true    # Do we want cmock to include the number of calls to this callback, when using callbacks?
   :callback_after_arg_check: false # Do we want cmock to enforce an argument check first when using a callback?
   #:includes: []                   # You can add additional includes here, or specify the location with the options below
-  #:includes_h_pre_orig_header: [] 
+  #:includes_h_pre_orig_header: []
   #:includes_h_post_orig_header: []
   #:includes_c_pre_header:  []
   #:includes_c_post_header:  []
@@ -206,7 +206,7 @@
   #:array_size_name:  'size|len'    # Specify a name or names that CMock might automatically recognize as the length of an array
   :exclude_setjmp_h:  false        # Don't use setjmp when running CMock. Note that this might result in late reporting or out-of-order failures.
 
-# Configuration options specific to Unity. 
+# Configuration options specific to Unity.
 :unity:
   :defines:
     - UNITY_EXCLUDE_FLOAT
@@ -314,7 +314,7 @@
 #         :includes:
 #           - include/**
 
-# :subprojects:  
+# :subprojects:
 #   :paths:
 #    - :name: libprojectA
 #      :source:
@@ -356,59 +356,59 @@
 # As [:tools] is blank, gcc will be used (so long as it's in your system path)
 # See documentation to configure a given toolchain for use
 # :tools:
-#   :test_compiler: 
+#   :test_compiler:
 #     :executable:
 #     :arguments: []
-#     :name: 
+#     :name:
 #     :optional: FALSE
-#   :test_linker: 
+#   :test_linker:
 #     :executable:
 #     :arguments: []
-#     :name: 
+#     :name:
 #     :optional: FALSE
-#   :test_assembler: 
+#   :test_assembler:
 #     :executable:
 #     :arguments: []
-#     :name: 
+#     :name:
 #     :optional: FALSE
-#   :test_fixture: 
+#   :test_fixture:
 #     :executable:
 #     :arguments: []
-#     :name: 
+#     :name:
 #     :optional: FALSE
-#   :test_includes_preprocessor: 
+#   :test_includes_preprocessor:
 #     :executable:
 #     :arguments: []
-#     :name: 
+#     :name:
 #     :optional: FALSE
-#   :test_file_preprocessor: 
+#   :test_file_preprocessor:
 #     :executable:
 #     :arguments: []
-#     :name: 
+#     :name:
 #     :optional: FALSE
-#   :test_file_preprocessor_directives: 
+#   :test_file_preprocessor_directives:
 #     :executable:
 #     :arguments: []
-#     :name: 
+#     :name:
 #     :optional: FALSE
-#   :release_compiler: 
+#   :release_compiler:
 #     :executable:
 #     :arguments: []
-#     :name: 
+#     :name:
 #     :optional: FALSE
-#   :release_linker: 
+#   :release_linker:
 #     :executable:
 #     :arguments: []
-#     :name: 
+#     :name:
 #     :optional: FALSE
-#   :release_assembler: 
+#   :release_assembler:
 #     :executable:
 #     :arguments: []
-#     :name: 
+#     :name:
 #     :optional: FALSE
 #   :release_dependencies_generator:
 #     :executable:
 #     :arguments: []
-#     :name: 
+#     :name:
 #     :optional: FALSE
 ...
