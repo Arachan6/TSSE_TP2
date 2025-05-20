@@ -12,7 +12,7 @@ static uint16_t *port_address;
 /**
  * @brief Convierte un número de LED a su correspondiente máscara de bits.
  * @param led Número de LED (1 a 16).
- * @return Máscara de bits correspondiente al LED. =)
+ * @return Máscara de bits correspondiente al LED.
  */
 static uint16_t LedToMask(uint8_t led){
     return (FIRST_BIT << (led - LEDS_TO_BIT_OFFSET));
