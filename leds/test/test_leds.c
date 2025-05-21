@@ -8,7 +8,7 @@ void setUp(void) {
     LedsInit(&leds_virtuales);
 }
 
-/// @test Con la inicialización, todos los LEDs deben quedar apagados
+/// @test Con la inicialización, todos los LEDs deben quedar apagado
 void test_todos_los_leds_inician_apagados(void) {
     uint16_t leds_virtuales = 0xFFFF;
     LedsInit(&leds_virtuales);
