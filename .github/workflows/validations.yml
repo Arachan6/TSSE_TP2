@@ -32,9 +32,7 @@ jobs:
         uses: pre-commit/action@v3.0.0
 
       - name: Run Unit Tests
-        run: |
-          cd leds
-          ceedling clobber gcov:all utils:gcov
+        run: ceedling clobber gcov:all utils:gcov
 
       - name: Test Report
         uses: dorny/test-reporter@v1
